@@ -1,0 +1,60 @@
+#include <stdio.h>
+
+int main() {
+    // =========================
+    // Movimento da TORRE (FOR)
+    // =========================
+    // A Torre anda em linha reta. Vamos simular 5 casas para a direita.
+    int i;
+    printf("Movimento da Torre (5 casas para a Direita):\n");
+    for (i = 1; i <= 5; i++) {
+        printf("Direita\n");
+    }
+
+    // =========================
+    // Movimento do BISPO (WHILE)
+    // =========================
+    // O Bispo anda na diagonal. Vamos simular 5 casas para cima e à direita.
+    int j = 1;
+    printf("\nMovimento do Bispo (5 casas na diagonal para Cima e Direita):\n");
+    while (j <= 5) {
+        printf("Cima, Direita\n");
+        j++;
+    }
+
+    // =========================
+    // Movimento da RAINHA (DO-WHILE)
+    // =========================
+    // A Rainha anda em todas as direções. Vamos simular 8 casas para a esquerda.
+    int k = 1;
+    printf("\nMovimento da Rainha (8 casas para a Esquerda):\n");
+    do {
+        printf("Esquerda\n");
+        k++;
+    } while (k <= 8);
+
+    // =========================
+    // Movimento do CAVALO (FOR + WHILE)
+    // =========================
+    // O Cavalo anda em "L": duas casas para baixo e uma para a esquerda.
+    // Vamos usar um loop FOR para as duas casas para baixo
+    // e um loop WHILE para a casa para a esquerda.
+
+    int passosBaixo = 2;
+    int passosEsquerda = 1;
+    int m;
+
+    printf("\nMovimento do Cavalo (2 casas para Baixo e 1 para Esquerda):\n");
+
+    for (m = 1; m <= passosBaixo; m++) {
+        printf("Baixo\n");
+    }
+
+    int n = 0;
+    while (n < passosEsquerda) {
+        printf("Esquerda\n");
+        n++;
+    }
+
+    return 0;
+}
